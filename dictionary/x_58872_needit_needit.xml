@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="Needit" max_length="40" name="x_58872_needit_needit" sizeclass="3" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Legal" label="Request type" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element label="Human Resources" sequence="0" value="hr"/>
+                <element label="Facilites" sequence="1" value="Facilites"/>
+                <element label="Legal" sequence="2" value="Legal"/>
+                <element label="Your Choice Department" sequence="3" value="Your Choice Department"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Legal 1" label="What Needed" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element label="Human Resources 1" sequence="0" value="Human Resources 1"/>
+                <element label="Human Resources 2" sequence="1" value="Human Resources 2"/>
+                <element label="Facilities 1" sequence="2" value="Facilities 1"/>
+                <element label="Facilities 2" sequence="3" value="Facilities 2"/>
+                <element label="Legal 1" sequence="4" value="Legal 1"/>
+                <element label="Legal 2" sequence="5" value="Legal 2"/>
+                <element label="Your choice department1" sequence="6" value="Your choice department1"/>
+                <element label="Your choice department 2" sequence="7" value="Your choice department 2"/>
+            </choice>
+        </element>
+        <element label="New Due Date" max_length="40" name="u_due_date_1" type="due_date"/>
+        <element label="New Date/Time" mandatory="true" max_length="40" name="u_glide_date_time_2" type="glide_date_time"/>
+        <element label="New Integer" max_length="40" name="u_integer_1" type="integer"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_reference_2" reference="x_58872_needit_needit" type="reference"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="cmdb_ci_appl_dot_net" type="reference"/>
+    </element>
+</database>
